@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Processo do Cliente - Corretor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastro de Processo do Cliente</h1>
+    <form id="formProcesso">
+      <label for="nome_cliente">Nome do Cliente:</label>
+      <input type="text" id="nome_cliente" required>
+
+      <h3>Etapas do Processo</h3>
+      <label for="etapa_1">Etapa 1: Documentação</label>
+      <select id="etapa_1">
+        <option value="nao_iniciado">Não Iniciado</option>
+        <option value="em_andamento">Em Andamento</option>
+        <option value="concluido">Concluído</option>
+      </select>
+
+      <label for="etapa_2">Etapa 2: Assinatura</label>
+      <select id="etapa_2">
+        <option value="nao_iniciado">Não Iniciado</option>
+        <option value="em_andamento">Em Andamento</option>
+        <option value="concluido">Concluído</option>
+      </select>
+
+      <label for="etapa_3">Etapa 3: Entrega de Chaves</label>
+      <select id="etapa_3">
+        <option value="nao_iniciado">Não Iniciado</option>
+        <option value="em_andamento">Em Andamento</option>
+        <option value="concluido">Concluído</option>
+      </select>
+
+      <button type="submit">Salvar Processo</button>
+    </form>
+
+    <div id="resultado">
+      <p id="link_cliente">Link para o cliente: <a id="cliente_link" href="#" target="_blank">Ver Processo</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
